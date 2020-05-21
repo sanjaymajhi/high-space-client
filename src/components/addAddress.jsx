@@ -31,6 +31,10 @@ function AddAddress(props) {
         }
       })
       .then(() => {
+        ctx.dispatch({
+          type: "setAddressList",
+          payload: [...ctx.addressList, ctx.address],
+        });
         ctx.dispatch({ type: "setAddAddressModal", payload: false });
       })
       .catch((err) => {

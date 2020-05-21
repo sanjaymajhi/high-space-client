@@ -14,7 +14,10 @@ function LandingPage() {
         }
         return res.json();
       })
-      .then((data) => ctx.dispatch({ type: "setCustList", payload: data.list }))
+      .then((data) => {
+        document.getElementById("no-cust").style.display = "none";
+        ctx.dispatch({ type: "setCustList", payload: data.list });
+      })
       .catch(
         (err) => (document.getElementById("no-cust").style.display = "block")
       );

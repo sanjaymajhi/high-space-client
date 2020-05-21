@@ -90,7 +90,7 @@ function AddCust(props) {
                 <Form.Label>Sex</Form.Label>
                 <Form.Control
                   type="text"
-                  placeholder="Enter Sex"
+                  placeholder="Enter Sex (M/F/O)"
                   name="sex"
                   required={true}
                 />
