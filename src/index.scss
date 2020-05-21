@@ -1,6 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
@@ -12,10 +11,8 @@ ul {
 }
 
 #main {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
+  grid-template-columns: 50% 50%;
 }
 
 button {
@@ -47,22 +44,17 @@ button {
   height: 81vh;
   overflow: auto;
   background-color: #eaeaea;
-}
-
-#cust_list h2 {
-  padding: 3vh 3vw;
-}
-
-#cust_list ul {
-  padding: 25vh 4vw;
-}
-
-#cust_list ul li {
-  margin: 1vh 1vw;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 20% 20% 20% 20% 20%;
+  h2 {
+    padding: 3vh 3vw;
+  }
+  ul {
+    padding: 25vh 4vw;
+    li {
+      margin: 1vh 1vw;
+      display: grid;
       grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+  }
 }
 
 #address_list {
@@ -71,22 +63,16 @@ button {
   text-align: center;
   background-color: #eaeaea;
   height: 81vh;
-}
-
-#address_list h2 {
-  padding: 3vh 3vw;
-  color: white;
-}
-
-#address_list ul {
-  padding: 25vh 4vw;
-}
-
-#address_list ul li {
-  padding: 1vh 1vw;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 20% 20% 20% 20% 20%;
+  h2 {
+    padding: 3vh 3vw;
+    color: white;
+  }
+  ul {
+    padding: 25vh 4vw;
+    li {
+      padding: 1vh 1vw;
+      display: grid;
       grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+  }
 }
-/*# sourceMappingURL=index.css.map */
